@@ -44,8 +44,12 @@
 			  		}
 		  
 				]
-			},
-			{
+			}]
+		},
+		{
+			"Level" : 3,
+			"Rows" : [
+		  	{
 		  		"Elements" : [
 			  		{
 			  			"id" : "id1", 
@@ -58,14 +62,21 @@
 			  		{
 			  			"id" : "id3", 
 			  			"Image" : "./Resources/Strawberry.jpeg"
-			  		},
+			  		}
+		  		]
+		  	},
+		  	{
+		  		"Elements" : [
 			  		{
 			  			"id" : "id4",
 			  			"Image" : "./Resources/Banana.jpg"
+			  		},
+			  		{
+			  			"id" : "id5",
+			  			"Image" : "./Resources/Pear.jpeg"
 			  		}
-		  
-				]
-			}]
+			  	]
+		  	}]
 		}
 	]
 }

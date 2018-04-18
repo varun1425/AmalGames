@@ -14,7 +14,7 @@
   	<div class="table-container">
 		<table >
 			<tbody >
-				<tr ng-repeat = "r in myGrid.Levels[0].Rows">
+				<tr ng-repeat = "r in myGrid.Levels[myGrid.Levels.length-1].Rows">
 					<td ng-repeat = "c in r.Elements" >
 						<div data-objid = {{c.id}} ondrop="drop(event)" ondragover="allowDrop(event)">
 					 		<img ng-src="{{c.Image}}"/>

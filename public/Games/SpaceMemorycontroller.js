@@ -1,35 +1,3 @@
-
-jsonData = {
-	"Game"  : "Photo Memory",
-	"Levels" : [{
-	
-		"Level" : 2,
-		"Rows" : [
-	  	{
-	  		"Elements" : [
-	  		{
-	  			"id" : "id1", 
-	  			"Image" : "./Resources/Orange.jpeg"
-	  		},
-	  		{
-	  			"id" : "id2", 
-	  			"Image" : "./Resources/Apple.jpeg"
-	  		},
-	  		{
-	  			"id" : "id3", 
-	  			"Image" : "./Resources/Strawberry.jpeg"
-	  		},
-	  		{
-	  			"id" : "id4",
-	  			"Image" : "./Resources/Banana.jpg"
-	  		}, //
-		],
-		},
-		
-	
-	]}
-]}
-
 var myApp = angular.module("myApp", []);
 myApp.controller("CtrlOne", function ($scope,$http) {
 	
@@ -44,7 +12,6 @@ myApp.controller("CtrlOne", function ($scope,$http) {
         	console.log("success reading json");
         	console.log(jsonData);
             $scope.myGrid = jsonData;
-
         })
         .error(function () {
         	console.log("Error reading json");

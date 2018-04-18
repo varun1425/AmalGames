@@ -1,0 +1,23 @@
+{
+	"Game" : "Flash Cards",
+	"Concepts" : [
+		{
+			"Concept Name" : "Fruits",
+			"Cards" : [
+		  		{
+		  			"id" : "id1", 
+		  			"Image" : "./Resources/Orange.jpeg"
+		  		},
+		  		{
+		  			"id" : "id2", 
+		  			"Image" : "./Resources/Apple.jpeg"
+		  		},
+		  		{
+		  			"id" : "id3",
+		  			"Image" : "./Resources/Banana.jpg"
+		  		}
+	  		]
+		  	
+		}
+	]
+}

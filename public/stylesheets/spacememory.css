@@ -1,10 +1,19 @@
-td>div
+td>div, .gridcell
 {
 	width: 200px;
 	height: 200px;
 	border: 1px;
 	border-style: solid;
 	line-height: 200px;
+	text-align: center;
+}
+.flashCardCell
+{
+	width: 400px;
+	height: 400px;
+	border: 1px;
+	border-style: solid;
+	line-height: 400px;
 	text-align: center;
 }
 .container
