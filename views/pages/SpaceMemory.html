@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../stylesheets/spacememory.css">
+<script src="./libs/angular.min.js"></script>
+<script src="./libs/jquery-1.11.1.min.js"></script>
+<script src="../../Games/SpaceMemorycontroller.js"></script>
+  <meta charset="utf-8">
+  <title>Space Memory</title>
+</head>
+<body ng-app="myApp" ng-controller="CtrlOne" onload="loadCall()">
+  <div>Hello, {{myGrid.Game}} <button onclick="checkResult()">Check</button> </div>
+  <div class="container">
+  	<div class="table-container">
+		<table >
+			<tbody >
+				<tr ng-repeat = "r in myGrid.Levels[0].Rows">
+					<td ng-repeat = "c in r.Elements" >
+						<div data-objid = {{c.id}} ondrop="drop(event)" ondragover="allowDrop(event)">
+					 		<img ng-src="{{c.Image}}"/>
+					 	</div>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+  
+	<div class="side-panel" ng-repeat = "r in myGrid.Levels[0].Rows">
+		<div ng-repeat = "c in r.Elements" >
+			<img id="{{c.id}}" ng-src="{{c.Image}}" draggable="true" ondragstart="drag(event)"/>
+		</div>
+	</div>
+  </div>
+
+</body>
+</html>

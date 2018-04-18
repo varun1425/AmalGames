@@ -1,0 +1,46 @@
+td>div
+{
+	width: 200px;
+	height: 200px;
+	border: 1px;
+	border-style: solid;
+	line-height: 200px;
+	text-align: center;
+}
+.container
+{
+	font-size: 0px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.table-container
+{
+	display: inline-block; 
+	*display: inline; zoom: 1; 
+	vertical-align: top;
+	float: left,right;
+}
+.side-panel
+{
+	float: right;
+	visibility: hidden;
+}
+div>div
+{
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+img
+{
+	max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+button
+{
+	top:0;
+}
