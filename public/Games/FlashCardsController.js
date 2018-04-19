@@ -3,7 +3,7 @@ myApp.controller("CtrlOne", function ($scope,$http, $interval) {
 	
 	var request = {
         method: 'get',
-        url: './Games/FlashCards.json',
+        url: '/api/JSON/FlashCards',
         dataType: 'json',
         contentType: "application/json"
     };

@@ -1,12 +1,12 @@
 var myApp = angular.module("myApp", []);
 myApp.controller("CtrlOne", function ($scope,$http) {
-	
 	var request = {
         method: 'get',
-        url: './Games/SpaceMemory.json',
+        url: '/api/JSON/SpaceMemory',
         dataType: 'json',
         contentType: "application/json"
     };
+	
 	$http(request)
         .success(function (jsonData) {
         	console.log("success reading json");

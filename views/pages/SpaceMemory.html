@@ -26,7 +26,7 @@
 		</table>
 	</div>
   
-	<div class="side-panel" ng-repeat = "r in myGrid.Levels[0].Rows">
+	<div class="side-panel" ng-repeat = "r in myGrid.Levels[myGrid.Levels.length-1].Rows">
 		<div ng-repeat = "c in r.Elements" >
 			<img id="{{c.id}}" ng-src="{{c.Image}}" draggable="true" ondragstart="drag(event)"/>
 		</div>
