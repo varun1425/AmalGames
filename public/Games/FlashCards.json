@@ -5,15 +5,15 @@
 			"Concept Name" : "Fruits",
 			"Cards" : [
 		  		{
-		  			"id" : "id1", 
+		  			"Name" : "Orange", 
 		  			"Image" : "./Resources/Orange.jpeg"
 		  		},
 		  		{
-		  			"id" : "id2", 
+		  			"Name" : "Apple", 
 		  			"Image" : "./Resources/Apple.jpeg"
 		  		},
 		  		{
-		  			"id" : "id3",
+		  			"Name" : "Banana",
 		  			"Image" : "./Resources/Banana.jpg"
 		  		}
 	  		]

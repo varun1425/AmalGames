@@ -48,7 +48,10 @@ img
     max-height:100%;
     vertical-align: middle;
 }
-
+.flashCardText
+{
+	font-size: 40px;
+}
 button
 {
 	top:0;

@@ -20,13 +20,19 @@ myApp.controller("CtrlOne", function ($scope,$http, $interval) {
         .error(function () {
         	console.log("Error reading json");
         });
+    $scope.showText = false;    
     $scope.play = function(){
     	var timoutPromise = $interval(function(){
+    			$scope.cardText = $scope.concept.Cards[$scope.currentCard].Name;
      			$scope.imageSrc = $scope.concept.Cards[$scope.currentCard].Image;
-     			$scope.currentCard++;
+     			$scope.showText = !$scope.showText;
+     			if(!$scope.showText)    
+     				$scope.currentCard++;
      			// $scope.apply();
+     			console.log("Text :"+$scope.cardText);
+     			console.log("Src :"+$scope.imageSrc);
      			
-     		}, 1000, $scope.noOfCards); 
+     		}, 1000, 2*$scope.noOfCards); 
     }
 
 });

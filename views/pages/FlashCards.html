@@ -12,7 +12,8 @@
   <div>Hello, {{myGrid.Game}} <button ng-click="play()">Play</button> </div>
   <div class="container">
   	<div class="flashCardCell">
-  		<img ng-src="{{imageSrc}}"/>
+  		<div class = "flashCardText" ng-show = "showText">{{cardText}}</div>
+  		<img ng-src = "{{imageSrc}}"  ng-hide = "showText"/>
 				<!--tr ng-repeat = "r in myGrid.Levels[0].Rows">
 					<td ng-repeat = "c in r.Elements" >
 						<div data-objid = {{c.id}} ondrop="drop(event)" ondragover="allowDrop(event)">
