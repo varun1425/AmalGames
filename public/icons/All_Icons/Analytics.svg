@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="S_Analytics_Md_N@2x" height="36" id="S_Analytics_Md_N_2x" viewBox="0 0 36 36" width="36">
+  <defs>
+    <style>
+      .fill {
+        fill: #000;
+        fill-rule: evenodd;
+        opacity: 0.65;
+      }
+
+      
+    </style>
+  </defs>
+  <title>S_Analytics_Md_N@2x</title>
+  <path class="fill" d="M14,3V30h8V3a1,1,0,0,0-1-1H15A1,1,0,0,0,14,3Z" />
+  <path class="fill" d="M24,11V30h8V11a1,1,0,0,0-1-1H25A1,1,0,0,0,24,11Z" />
+  <path class="fill" d="M4,21v9h8V21a1,1,0,0,0-1-1H5A1,1,0,0,0,4,21Z" />
+  <rect class="fill" height="2" rx="0.5" ry="0.5" width="32" x="2" y="32" />
+  </svg>

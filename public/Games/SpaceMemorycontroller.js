@@ -12,6 +12,7 @@ myApp.controller("CtrlOne", function ($scope,$http) {
         	console.log("success reading json");
         	console.log(jsonData);
             $scope.myGrid = jsonData;
+            $scope.currentLevel = $scope.myGrid.Levels.length;
         })
         .error(function () {
         	console.log("Error reading json");

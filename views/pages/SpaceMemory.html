@@ -8,16 +8,21 @@
   <meta charset="utf-8">
   <title>Space Memory</title>
 </head>
-<body ng-app="myApp" ng-controller="CtrlOne" onload="loadCall()">
+<body ng-app="myApp" style="background: #303030;" ng-controller="CtrlOne" onload="loadCall()">
   <div>Hello, {{myGrid.Game}} <button onclick="checkResult()">Check</button> </div>
-  <div class="container">
-  	<div class="table-container">
+  <div class="left-panel">
+		<div class = "level" >
+			<label>Playing Level {{currentLevel}}</label>
+		</div>
+  </div>
+  <div>
+  	<div class="frameContainer">
 		<table >
 			<tbody >
-				<tr ng-repeat = "r in myGrid.Levels[myGrid.Levels.length-1].Rows">
+				<tr ng-repeat = "r in myGrid.Levels[currentLevel-1].Rows">
 					<td ng-repeat = "c in r.Elements" >
 						<div data-objid = {{c.id}} ondrop="drop(event)" ondragover="allowDrop(event)">
-					 		<img ng-src="{{c.Image}}"/>
+					 		<img class="gridimg" ng-src="{{c.Image}}"/>
 					 	</div>
 
 					</td>
@@ -25,13 +30,22 @@
 			</tbody>
 		</table>
 	</div>
-  
-	<div class="side-panel" ng-repeat = "r in myGrid.Levels[myGrid.Levels.length-1].Rows">
+  	
+
+  </div>
+  <div class="side-panel" ng-repeat = "r in myGrid.Levels[myGrid.Levels.length-1].Rows">
 		<div ng-repeat = "c in r.Elements" >
-			<img id="{{c.id}}" ng-src="{{c.Image}}" draggable="true" ondragstart="drag(event)"/>
+			<img id="{{c.id}}" ng-src="{{c.Image}}" class="sideImg" draggable="true" ondragstart="drag(event)"/>
 		</div>
 	</div>
-  </div>
-
+  <!--div class="right-panel thumbnail-dock-container" >
+		<div class="wrapper" draggable="false">
+			<div ng-repeat = "r in myGrid.Levels[currentLevel-1].Rows" class="inwrapper" draggable="false">
+				<div ng-repeat = "c in r.Elements" class="thumbnail-container left" draggable="false">
+					<img id="{{c.id}}" ng-src="{{c.Image}}" draggable="true" ondragstart="drag(event)"/>
+				</div>
+			</div>
+		</div>
+	</div-->
 </body>
 </html>
