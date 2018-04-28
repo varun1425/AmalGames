@@ -12,11 +12,21 @@ myApp.controller("CtrlOne", function ($scope,$http) {
         	console.log("success reading json");
         	console.log(jsonData);
             $scope.myGrid = jsonData;
-            $scope.currentLevel = $scope.myGrid.Levels.length;
+            $scope.currentLevel = 1;
+            //$scope.currentLevel = $scope.myGrid.Levels.length;
         })
         .error(function () {
         	console.log("Error reading json");
         });
+
+    $scope.nextLevel = function() {
+        if($scope.currentLevel < $scope.myGrid.Levels.length)
+            $scope.currentLevel++; 
+    }
+    $scope.prevLevel = function() {
+        if($scope.currentLevel > 1)
+            $scope.currentLevel--; 
+    }
 
 });
 
@@ -56,3 +66,18 @@ function drop(ev) {
     ev.target.innerHTML="";
     ev.target.appendChild(document.getElementById(data));
 }
+myApp.directive('nextLevel', function () {
+
+return {
+       restrict: 'A',
+       scope: true,
+       link: function(scope, element, attrs) {
+
+           function gotonext(){
+            if(scope.$parent.currentLevel < scope.$parent.myGrid.Levels.length-1)
+               scope.$parent.currentLevel++; 
+           }
+           element.on('click', gotonext);
+       }
+   }
+});

@@ -12,7 +12,17 @@
   <div>Hello, {{myGrid.Game}} <button onclick="checkResult()">Check</button> </div>
   <div class="left-panel">
 		<div class = "level" >
-			<label>Playing Level {{currentLevel}}</label>
+			<ul>
+				<li>
+					<div class="levelLabel">Playing Level {{currentLevel}}</div>
+				</li>
+				<li>
+					<button ng-click="prevLevel()" class="nextlevel right" >Prev</button>
+				</li>
+				<li>
+					<button ng-click="nextLevel()" class="nextlevel right" >Next</button>
+				</li>
+			</ul>
 		</div>
   </div>
   <div>

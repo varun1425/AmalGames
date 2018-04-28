@@ -66,3 +66,23 @@ button
 	top:0;
 }
 
+.left-panel ul
+{
+	list-style: none;
+	line-height: 0px;
+} 
+
+.left-panel li 
+{ 
+	display: inline-block; 
+}
+.levelLabel
+{
+	display: inline-block;
+	float: left;
+}
+.level
+{
+	width: auto;
+	height: auto;
+}
